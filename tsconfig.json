@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": "src",
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "lib": ["es2017", "es2015", "dom", "es2018.promise"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "rootDir": "../",
+        "skipLibCheck": true,
+        "strict": true,
+        "strictFunctionTypes": false,
+        "strictNullChecks": false,
+        "target": "esnext",
+        "types": ["jest", "testing-library__jest-dom"],
+        "paths": {
+            "@components": ["components"],
+            "@components/*": ["components/*"],
+            "@theme": ["theme"],
+            "@theme/*": ["theme/*"],
+            "@utils": ["utils"],
+            "@utils/*": ["utils/*"],
+            "@test-utils": ["utils/test-utils"],
+            "@styled": ["utils/styled"],
+            "@store": ["store"],
+            "@store/*": ["store/*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", ".commitlintrc"]
+}
